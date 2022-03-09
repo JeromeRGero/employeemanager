@@ -2,6 +2,7 @@ package com.comicfridge.employeemanager.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.lang.annotation.Documented;
 
 @Entity
 public class Employee implements Serializable {

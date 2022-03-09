@@ -4,11 +4,15 @@ import com.comicfridge.employeemanager.exception.UserNotFoundException;
 import com.comicfridge.employeemanager.models.Employee;
 import com.comicfridge.employeemanager.repo.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.UUID;
 
+@Service
+@Transactional
 public class EmployeeService {
     private final EmployeeRepo employeeRepo;
 
