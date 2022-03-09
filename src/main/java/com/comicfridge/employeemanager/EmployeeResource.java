@@ -17,6 +17,7 @@ public class EmployeeResource {
         this.employeeService = employeeService;
     }
 
+    @CrossOrigin
     @GetMapping("/all")
     public ResponseEntity<List<Employee>> getAllEmployees() {
         List<Employee> employees = employeeService.findAllEmployees();
